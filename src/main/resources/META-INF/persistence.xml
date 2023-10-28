@@ -4,13 +4,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
     <persistence-unit name="default" transaction-type="RESOURCE_LOCAL">
-        <class>domain.Departamento</class>
+        <class>domain.Empleado</class>
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/empresabd?serverTimezone=UTC"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cl1_chiclla_jean?serverTimezone=UTC"/>
             <property name="jakarta.persistence.jdbc.user" value="root"/>
-            <property name="jakarta.persistence.jdbc.password" value="mysql"/>
-<!--             <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/> -->
+            <property name="jakarta.persistence.jdbc.password" value=""/>
+            <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>
             
             <property name="hibernate.hbm2ddl.auto" value="update"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
